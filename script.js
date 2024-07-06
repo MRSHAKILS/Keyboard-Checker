@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const keys = document.querySelectorAll('.key');
   const clickSound = new Audio('audio/click.mp3');
-  const bgColor = 'green'; // Background color
+  const bgColor = 'yellow'; // Background color
   const keyMap = {
       'CapsLock': '.capslock', 'Backspace': '.backspace', 'Tab': '.tab', 'Enter': '.enter',
       'Shift': '.lshift, .rshift', 'Control': '.lctrl, .rctrl', 'Alt': '.lalt, .ralt', 'Meta': '.win',
