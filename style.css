@@ -279,76 +279,46 @@ strong {
 }
 
 /* social */
-.card {
-  display: flex;
-  height: 70px;
-  width: 270px;
-}
-
-.card svg {
-  position: absolute;
-  display: flex;
-  width: 60%;
+.parent {
+  width: 100%;
   height: 100%;
-  font-size: 24px;
-  font-weight: 700;
-  opacity: 1;
-  transition: opacity 0.25s;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 25%;
-  color: whitesmoke;
-  font-size: 24px;
-  text-decoration: none;
-  transition: 0.25s;
-  border-radius: 50px;
+  align-items: center;
 }
 
-.card svg {
-  transform: scale(1);
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
-.card .social-link1:hover {
-  background-color: #1a1e22;
-  animation: bounce_613 0.4s linear;
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
 }
 
-.card .social-link2:hover {
-  background-color: #0a66c2;
-  animation: bounce_613 0.4s linear;
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
 }
 
-.card .social-link3:hover {
-  background-color: #0059f7;
-  animation: bounce_613 0.4s linear;
-}
-
-.card .social-link4:hover {
-  background-color: #1d4292;
-  animation: bounce_613 0.4s linear;
-}
-
-@keyframes bounce_613 {
-  40% {
-    transform: scale(1.4);
-  }
-
-  60% {
-    transform: scale(0.8);
-  }
-
-  80% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
 }
