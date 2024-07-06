@@ -267,58 +267,85 @@ strong {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
   }
 
-  70% {
+  20% {
     transform: scale(1);
     box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
   }
 
-  100% {
+  30% {
     transform: scale(0.75);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
 
-/* social */
-.parent {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.child {
-  width: 50px;
+
+
+/* for all social containers*/
+.card {
+  display: flex;
   height: 50px;
+  width: 200px;
+}
+
+.card svg {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease-in-out;
-  border-radius: 50%;
-  margin: 0 5px;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
 }
 
-.child:hover {
-  background-color: white;
-  background-position: -100px 100px, -100px 100px;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-  transform: perspective(180px) rotateX(60deg) translateY(2px);
-  box-shadow: 0px 10px 10px rgb(1, 49, 182);
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  font-size: 20px;
-}
-
-.button:hover {
-  width: inherit;
-  height: inherit;
+.card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
-  border-radius: 50%;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background-color: #1a1e22;
+  animation: bounce 1.5s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #1a1e22;
+  animation: bounce 1.5s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #1a1e22;
+  animation: bounce 1.5s linear;
+}
+
+
+
+@keyframes bounce {
+  
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
