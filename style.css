@@ -8,107 +8,8 @@ body {
 h1 {
   text-align: center;
 }
-.socialMedia {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  font-size: 24px;
-}
 
-.socialMedia i {
-  font-size: 25px;
-  margin: 15px;
-}
-.keyboard {
-  max-width: 1080px;
-  margin-top: 20px;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #27272c;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(30, 30px);
-  grid-template-rows: repeat(5, 60px);
-  grid-gap: 5px;
-}
-
-.key,
-.keys {
-  background-color: #818d8b;
-  border: 2px solid black;
-  border-radius: 5px;
-  grid-column: span 2;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 17px;
-  color: #000000;
-}
-.key:hover {
-  border: 1px solid #000;
-  opacity: 0.7;
-}
-
-.backspace {
-  grid-column: span 4;
-}
-.win {
-  grid-column: span 3;
-}
-.tab {
-  grid-column: span 3;
-}
-.backslash {
-  grid-column: span 3;
-}
-.capslock {
-  grid-column: span 4;
-}
-.enter {
-  grid-column: span 4;
-}
-.lshift {
-  grid-column: span 5;
-}
-.rshift {
-  grid-column: span 5;
-}
-.lctrl {
-  grid-column: span 3;
-}
-.command {
-  grid-column: span 3;
-  font-size: 14px;
-}
-.space {
-  grid-column: span 15;
-}
-
-header {
-  text-align: center;
-  /* position: relative; */
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-right: 50px;
-}
-
-header button {
-  margin: 10px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-.extra {
-  background-color: #52555b;
-}
-/* button css */
+/* Full screen button css */
 .btn {
   display: flex;
   justify-content: center;
@@ -281,7 +182,7 @@ strong {
 
 
 
-/* for all social containers*/
+/*  all social containers*/
 .card {
   display: flex;
   height: 50px;
@@ -348,4 +249,95 @@ strong {
   100% {
     transform: scale(1);
   }
+}
+
+
+.keyboard {
+  max-width: 1080px;
+  margin-top: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #27272c;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(30, 30px);
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 5px;
+}
+
+.key,
+.keys {
+  background-color: #818d8b;
+  border: 2px solid black;
+  border-radius: 5px;
+  grid-column: span 2;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 17px;
+  color: #000000;
+}
+.key:hover {
+  border: 1px solid #000;
+  opacity: 0.7;
+}
+
+.backspace {
+  grid-column: span 4;
+}
+.win {
+  grid-column: span 3;
+}
+.tab {
+  grid-column: span 3;
+}
+.backslash {
+  grid-column: span 3;
+}
+.capslock {
+  grid-column: span 4;
+}
+.enter {
+  grid-column: span 4;
+}
+.lshift {
+  grid-column: span 5;
+}
+.rshift {
+  grid-column: span 5;
+}
+.lctrl {
+  grid-column: span 3;
+}
+.command {
+  grid-column: span 3;
+  font-size: 14px;
+}
+.space {
+  grid-column: span 15;
+}
+
+header {
+  text-align: center;
+  /* position: relative; */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+header button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.extra {
+  background-color: #52555b;
 }
